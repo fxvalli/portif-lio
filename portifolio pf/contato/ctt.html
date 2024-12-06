@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ctt.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="/img/9859beff-9f69-463f-a301-41a5c6083daf.webp" alt="Foto de perfil" class="header-photo">
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="/home/home.html">Início</a></li>
+                    <li><a href="/sobre/sobre.html">Sobre Mim</a></li>
+                    <li><a href="/projetos/projeto.html">Projetos</a></li>
+                    <li><a href="/contato/ctt.html">Contato</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                    &#9776;
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <form id="contact-form" class="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" placeholder="Seu nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Seu email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit" class="btn primary-btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <p>&copy; 2024 Desenvolvedor. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="ctt.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2a4023;
+    color: #ffffff;
+  }
+  
+  /* Cabeçalho */
+  .site-header {
+    background-color: #1f2f1a;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-photo {
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #5a8341;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .main-nav a:hover {
+    color: #71a059;
+  }
+  
+  .theme-toggle {
+    background: #5a8341;
+    border: none;
+    color: #ffffff;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: #1f2f1a;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .primary-btn {
+    background-color: #71a059;
+    color: #ffffff;
+  }
+  
+  .secondary-btn {
+    background-color: transparent;
+    color: #71a059;
+    border: 2px solid #71a059;
+  }
+  
+  /* Projetos */
+  .projects-section {
+    padding: 4rem 1rem;
+  }
+  
+  .project-card {
+    background-color: #5a8341;
+    padding: 1.5rem;
+    border-radius: 5px;
+  }
+  
+  /* Contato */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input, textarea {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Global Reset */
+body, h1, h2, h3, p, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo do site */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #2a4023; /* Verde musgo escuro */
+    color: #ffffff; /* Texto branco */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Cabeçalho */
+  .site-header {
+    background-color: #1f2f1a; /* Fundo verde mais escuro */
+    color: #ffffff; /* Texto branco */
+    padding: 1rem 0;
+    border-bottom: 3px solid #5a8341; /* Linha verde claro */
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .header-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #5a8341; /* Borda verde claro */
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #ffffff; /* Texto branco */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .main-nav a:hover {
+    color: #71a059; /* Verde mais claro no hover */
+  }
+  
+  /* Seção Hero */
+  .hero-section {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #1f2f1a;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    color: #71a059;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-actions a {
+    margin: 0 1rem;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #5a8341;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-actions a:hover {
+    background-color: #71a059;
+  }
+  
+  /* Seção Projetos */
+  .projects-section {
+    padding: 4rem 1rem;
+    background-color: #2a4023;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #71a059;
+    margin-bottom: 2rem;
+  }
+  
+  .section-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 3rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem; /* Maior espaçamento entre as caixas */
+    justify-items: center;
+  }
+  
+  .project-card {
+    background-color: #1f2f1a; /* Fundo da caixa */
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card h3 {
+    font-size: 1.8rem;
+    color: #71a059;
+    margin-bottom: 1rem;
+  }
+  
+  .project-card p {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .project-link {
+    color: #5a8341;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    color: #71a059;
+  }
+  
+  /* Seção Contato */
+  .contact-section {
+    padding: 4rem 1rem;
+    background-color: #1f2f1a;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 1.5rem;
+  }
+  
+  .contact-form label {
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1rem;
+    border: 2px solid #5a8341;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #2a4023;
+    color: #fff;
+  }
+  
+  .contact-form button {
+    padding: 1rem 2rem;
+    background-color: #5a8341;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #71a059;
+  }
+  
+  /* Rodapé */
+  .site-footer {
+    background-color: #1f2f1a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .site-footer p {
+    font-size: 1rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    
+    .project-card {
+      width: 90%;
+    }
+  }
+  
+/* Cabeçalho */
+.site-header {
+  background-color: #1f2f1a; /* Fundo verde mais escuro */
+  color: #ffffff; /* Texto branco */
+  padding: 1rem 0;
+  border-bottom: 3px solid #5a8341; /* Linha verde claro */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #5a8341; /* Borda verde claro */
+  justify-self: start ;
+}
+
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #ffffff; /* Texto branco */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #71a059; /* Verde mais claro no hover */
+}

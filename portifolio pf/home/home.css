@@ -1,0 +1,389 @@
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cor de fundo do body */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #fff; /* Fundo claro */
+  color: #2a4023; /* Verde musgo para texto */
+  transition: background-color 0.3s, color 0.3s; /* Suaviza a troca de cores */
+  text-align: center; /* Centraliza todos os textos no body */
+}
+
+/* Cabeçalho */
+.site-header {
+  background-color: #2a4023; /* Verde musgo escuro */
+  color: #fff;
+  padding: 1rem 2rem; /* Espaçamento confortável */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid #4c6d39; /* Verde claro */
+}
+
+.header-container {
+  display: flex;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza verticalmente os itens */
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #4c6d39; /* Verde claro */
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center; /* Centraliza os itens dentro da nav */
+  align-items: center;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #a3ca8c; /* Verde claro ao passar o mouse */
+}
+
+/* Botão de alternância de tema */
+.theme-toggle {
+  background: #4c6d39; /* Verde claro */
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: #6f9255; /* Verde ainda mais claro */
+}
+
+/* Seção Hero */
+.hero-section {
+  text-align: center; /* Centraliza o texto dentro da seção */
+  padding: 4rem 1rem;
+  background: #2a4023; /* Verde musgo escuro */
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.hero-actions .btn {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  margin: 0 0.5rem;
+}
+
+.primary-btn {
+  background-color: #4c6d39; /* Verde claro */
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background-color: #6f9255; /* Tom mais claro no hover */
+}
+
+.secondary-btn {
+  background-color: #fff;
+  color: #2a4023; /* Verde musgo */
+  border: 2px solid #4c6d39; /* Verde claro */
+}
+
+.secondary-btn:hover {
+  background-color: #4c6d39; /* Verde claro */
+  color: #fff;
+}
+
+/* Seção Welcome */
+.welcome-section {
+  background-color: #2a4023; /* Verde musgo escuro */
+  color: #fff;
+  padding: 4rem 1rem;
+  text-align: center; /* Centraliza o texto da seção */
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #a3ca8c; /* Verde claro */
+}
+
+.section-subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: #a3ca8c; /* Tom intermediário de verde */
+}
+
+.section-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.section-content strong {
+  color: #a3ca8c; /* Verde intermediário */
+}
+
+.call-to-action {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  color: #a3ca8c; /* Verde claro */
+  text-transform: uppercase;
+}
+
+.call-to-action:hover {
+  color: #71a059; /* Tom mais claro no hover */
+  text-decoration: underline;
+}
+
+/* Seção de Contato */
+.contact-section {
+  padding: 4rem 1rem;
+  background-color: #f9f9f9; /* Fundo claro */
+  color: #2a4023; /* Verde musgo */
+  text-align: center; /* Centraliza os textos da seção */
+}
+
+.contact-section .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form .form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4c6d39; /* Verde claro no foco */
+}
+
+.contact-form button {
+  background-color: #4c6d39;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #6f9255; /* Tom mais claro no hover */
+}
+
+.contact-info {
+  margin-top: 3rem;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #2a4023;
+}
+
+.contact-info .social-links {
+  margin-top: 1.5rem;
+}
+
+.contact-info .social-icon {
+  font-size: 1.8rem;
+  color: #4c6d39;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.contact-info .social-icon:hover {
+  color: #71a059;
+}
+
+/* Rodapé */
+.site-footer {
+  background-color: #2a4023;
+  padding: 2rem 0;
+  border-top: 3px solid #4c6d39;
+  text-align: center; /* Centraliza o texto no rodapé */
+}
+
+.site-footer p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+}
+
+/* Modo escuro */
+body.dark-theme {
+  background-color: #2a4023; /* Fundo escuro */
+  color: #fff;
+}
+
+body.dark-theme .site-header {
+  background-color: #1c2e19; /* Cabeçalho escuro */
+}
+
+body.dark-theme .hero-section {
+  background-color: #1c2e19; /* Hero escuro */
+}
+
+body.dark-theme .contact-section {
+  background-color: #3b4a30; /* Contato escuro */
+}
+
+body.dark-theme .site-footer {
+  background-color: #1c2e19; /* Rodapé escuro */
+}
+
+body.dark-theme .primary-btn {
+  background-color: #6f9255; /* Botões no tema escuro */
+}
+
+/* Estilo do header */
+.site-header {
+  background-color: #1c2e19; /* Cor de fundo do cabeçalho */
+  padding: 20px 0; /* Espaçamento superior e inferior */
+}
+
+/* Container do header */
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Espaço entre logo e navegação */
+  align-items: center; /* Alinha os itens verticalmente */
+  max-width: 1200px; /* Máxima largura do cabeçalho */
+  margin: 0 auto; /* Centraliza o container */
+  padding: 0 20px; /* Espaçamento nas laterais */
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-photo {
+  max-width: 80px; /* Ajuste o tamanho da foto da logo */
+  height: auto; /* Mantém a proporção */
+}
+
+/* Navegação principal */
+.main-nav {
+  flex-grow: 1; /* Faz a navegação ocupar o espaço restante */
+  display: flex;
+  justify-content: center; /* Centraliza os itens de navegação */
+}
+
+.main-nav ul {
+  list-style-type: none; /* Remove os marcadores da lista */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav li {
+  margin: 0 20px; /* Espaçamento entre os itens de navegação */
+}
+
+.main-nav a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: white; /* Cor do texto */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: 500; /* Peso da fonte */
+  transition: color 0.3s ease; /* Transição suave para efeito de hover */
+}
+
+/* Efeito ao passar o mouse nos links */
+.main-nav a:hover {
+  color: #6f9255; /* Cor do texto quando passa o mouse */
+}

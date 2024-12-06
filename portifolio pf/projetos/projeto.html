@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de um desenvolvedor moderno com projetos incríveis.">
+    <title>Portfólio | Desenvolvedor</title>
+    <link rel="stylesheet" href="projeto.css">
+    <link rel="stylesheet" href="projeto.js">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="/img/9859beff-9f69-463f-a301-41a5c6083daf.webp" alt="Minha Foto" class="header-photo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/home/home.html">Início</a></li>
+                    <li><a href="/sobre/sobre.html">Sobre Mim</a></li>
+                    <li><a href="/projetos/projeto.html">Projetos</a></li>
+                    <li><a href="/contato/ctt.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <h1 class="hero-title">Transformando Ideias em Código</h1>
+            <p class="hero-subtitle">Sou um desenvolvedor apaixonado por criar experiências digitais impactantes.</p>
+            <div class="hero-actions">
+                <a href="/projetos/projeto.html" class="btn primary-btn">Veja Meus Projetos</a>
+                <a href="/contato/ctt.html" class="btn secondary-btn">Fale Comigo</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Seção Projetos -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Meus Projetos</h2>
+                <p class="section-description">Aqui estão alguns dos projetos que desenvolvi ao longo da minha jornada.</p>
+                <div class="projects-grid">
+                    <!-- Projeto 1 -->
+                    <article class="project-card">
+                        <h3>Figma: Imperador Restaurante</h3>
+                        <p>Meu primeiro projeto no figma, fiz um "site" de um restaurante, no figma, aprendi a usá-lo, a também "linkar" as paginas além de usar as cores a favor do site.</p>
+                        <a href="https://www.figma.com/proto/4GGFkGZLzVLdD4M5IsYGP7/Untitled?node-id=13-5&starting-point-node-id=13%3A5">Ver Projeto</a>
+                    </article>
+                    <!-- Projeto 2 -->
+                    <article class="project-card">
+                        <h3>Booststrap: Landing Page</h3>
+                        <p>Tive que fazer um Landing Page, com o tema livre, e o tema foi palmeiras por ser tema livre, fiz do meu time de coração, tive aula de Booststrap, e tive que fazer essa Landing Page</p>
+                    <a href="https://github.com/fxvalli/Bootstrap1">Ver projeto</a>
+                    </article>
+                    <!-- Projeto 3 -->
+                    <article class="project-card">
+                        <h3>Site de Receita: Sabor na Tela</h3>
+                        <p>Aqui tivemos aulas sobre html, css. Com isso recebemos a missão de fazer um site de receitas com isso, fizemos o protótipo no figma e realizmaos no vs code.</p>
+                        <a href="https://github.com/VqtorZ/Sabor_na_tela">Ver Projeto</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    
+
+    <!-- Seção Contato -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <form id="contact-form" class="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" placeholder="Seu nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Seu email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit" class="btn primary-btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <p>&copy; 2024 Desenvolvedor. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
